@@ -31,32 +31,20 @@ const Navigation = () => {
         <div className="hidden md:flex items-center gap-8">
           <button 
             onClick={() => scrollToSection('features')}
-            className="text-foreground hover:text-primary transition-colors"
+            className="text-foreground hover:text-accent transition-colors"
           >
             Features
           </button>
           <button 
-            onClick={() => scrollToSection('pricing')}
-            className="text-foreground hover:text-primary transition-colors"
-          >
-            Pricing
-          </button>
-          <button 
-            onClick={() => scrollToSection('gallery')}
-            className="text-foreground hover:text-primary transition-colors"
-          >
-            Gallery
-          </button>
-          <button 
             onClick={() => scrollToSection('contact')}
-            className="text-foreground hover:text-primary transition-colors"
+            className="text-foreground hover:text-accent transition-colors"
           >
             Contact
           </button>
         </div>
 
         <Button 
-          onClick={() => scrollToSection('pricing')}
+          onClick={() => scrollToSection('contact')}
           className="shadow-soft"
         >
           Get Started

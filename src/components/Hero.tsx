@@ -39,7 +39,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="text-lg px-8 bg-primary hover:bg-primary/90 shadow-glow transition-all"
-            onClick={() => scrollToSection('pricing')}
+            onClick={() => scrollToSection('contact')}
           >
             Get Started
           </Button>
@@ -47,9 +47,9 @@ const Hero = () => {
             size="lg" 
             variant="outline" 
             className="text-lg px-8 border-2 border-accent text-accent hover:bg-accent/10 transition-all"
-            onClick={() => scrollToSection('gallery')}
+            onClick={() => scrollToSection('features')}
           >
-            View Gallery
+            Learn More
           </Button>
         </div>
       </div>

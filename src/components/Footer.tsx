@@ -14,8 +14,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-foreground">Product</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#features" className="hover:text-accent transition-colors">Features</a></li>
-              <li><a href="#pricing" className="hover:text-accent transition-colors">Pricing</a></li>
-              <li><a href="#gallery" className="hover:text-accent transition-colors">Gallery</a></li>
+              <li><a href="#contact" className="hover:text-accent transition-colors">Contact</a></li>
             </ul>
           </div>
           
