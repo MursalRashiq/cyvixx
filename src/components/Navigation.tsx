@@ -24,8 +24,8 @@ const Navigation = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="text-2xl font-serif font-bold text-primary">
-          EverAfter
+        <div className="text-2xl font-bold text-foreground tracking-wider">
+          CYVIXX
         </div>
         
         <div className="hidden md:flex items-center gap-8">

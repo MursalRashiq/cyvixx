@@ -10,7 +10,7 @@ const ProblemSolution = () => {
               <AlertCircle className="w-6 h-6" />
               <h3 className="text-xl font-semibold">The Problem</h3>
             </div>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Traditional Invitations Are Outdated
             </h2>
             <div className="space-y-3 text-muted-foreground text-lg">
@@ -22,12 +22,12 @@ const ProblemSolution = () => {
           </div>
 
           <div className="space-y-4 animate-fade-in">
-            <div className="inline-flex items-center gap-2 text-primary mb-4">
+            <div className="inline-flex items-center gap-2 text-accent mb-4">
               <Sparkles className="w-6 h-6" />
               <h3 className="text-xl font-semibold">Our Solution</h3>
             </div>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
-              Beautiful Digital Invitations
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Next-Generation Digital Platform
             </h2>
             <div className="space-y-3 text-muted-foreground text-lg">
               <p>✨ Stunning designs at a fraction of the cost</p>

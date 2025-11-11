@@ -54,11 +54,11 @@ const Pricing = () => {
     <section id="pricing" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
-            Simple, Transparent Pricing
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Transparent Pricing
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Choose the perfect plan for your special day
+            Premium technology, accessible pricing
           </p>
         </div>
 
@@ -66,21 +66,21 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <Card 
               key={index}
-              className={`p-8 relative animate-scale-in ${
+              className={`p-8 relative animate-scale-in bg-gradient-to-br from-card to-muted/20 ${
                 plan.popular 
-                  ? 'border-primary border-2 shadow-elegant' 
+                  ? 'border-accent border-2 shadow-glow' 
                   : 'border-border/50'
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-semibold">
                   Most Popular
                 </div>
               )}
               
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-serif font-bold text-foreground mb-2">
+                <h3 className="text-2xl font-bold text-foreground mb-2">
                   {plan.name}
                 </h3>
                 <div className="text-4xl font-bold text-primary mb-2">
@@ -94,7 +94,7 @@ const Pricing = () => {
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                     <span className="text-foreground">{feature}</span>
                   </li>
                 ))}

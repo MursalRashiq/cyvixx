@@ -39,11 +39,11 @@ const Features = () => {
     <section id="features" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
-            Everything You Need
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Powerful Features
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Powerful features to make your wedding invitation unforgettable
+            Advanced technology for seamless wedding invitations
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <Card 
               key={index}
-              className="p-6 hover:shadow-elegant transition-all duration-300 animate-scale-in border-border/50 bg-gradient-to-br from-card to-muted/20"
+              className="p-6 hover:shadow-glow transition-all duration-300 animate-scale-in border-border/50 bg-gradient-to-br from-card to-muted/20 hover:border-accent/50"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <feature.icon className="w-12 h-12 text-primary mb-4" />

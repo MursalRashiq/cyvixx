@@ -15,7 +15,7 @@ const Gallery = () => {
     <section id="gallery" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Design Gallery
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -27,7 +27,7 @@ const Gallery = () => {
           {samples.map((sample, index) => (
             <div 
               key={index}
-              className="group relative overflow-hidden rounded-lg shadow-soft hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/5]"
+              className="group relative overflow-hidden rounded-lg shadow-soft hover:shadow-glow transition-all duration-300 animate-scale-in aspect-[4/5] border border-border/30"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img 

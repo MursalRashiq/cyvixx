@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-wedding.jpg";
+import heroImage from "@/assets/hero-cyvixx.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -17,23 +17,28 @@ const Hero = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background" />
       </div>
       
       <div className="container relative z-10 px-4 py-20 mx-auto text-center animate-fade-in-up">
-        <h1 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6 leading-tight">
-          Your Love Story,
-          <br />
-          <span className="text-primary">Beautifully Digital</span>
-        </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Create stunning digital wedding invitations that your guests will love. 
-          Share your special day with elegance and ease.
+        <div className="mb-8">
+          <div className="h-1 w-64 mx-auto mb-8 rounded-full" style={{ background: 'var(--gradient-ribbon)' }} />
+          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-4 tracking-tight">
+            CYVIXX
+          </h1>
+          <div className="h-1 w-64 mx-auto rounded-full" style={{ background: 'var(--gradient-ribbon)' }} />
+        </div>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto font-light">
+          The Future of Wedding Invitations
+        </p>
+        <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Create stunning digital wedding invitations that captivate your guests. 
+          Premium technology meets timeless elegance.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
             size="lg" 
-            className="text-lg px-8 shadow-elegant hover:shadow-xl transition-all"
+            className="text-lg px-8 bg-primary hover:bg-primary/90 shadow-glow transition-all"
             onClick={() => scrollToSection('pricing')}
           >
             Get Started
@@ -41,10 +46,10 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="text-lg px-8 border-2 hover:bg-muted/50 transition-all"
+            className="text-lg px-8 border-2 border-accent text-accent hover:bg-accent/10 transition-all"
             onClick={() => scrollToSection('gallery')}
           >
-            View Designs
+            View Gallery
           </Button>
         </div>
       </div>
